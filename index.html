@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+    <!-- Write your CSS here
+
+    
+    White:
+    Red: 
+    Black: 
+    Blue: 
+    Yellow:
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    So grid lines are transparent! -->
+    
+  <style>
+    body{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+
+    }
+    .container {
+      background-color: #000;
+      width: 748px;
+      height: 748px;
+      display: grid;
+      gap: 9px;
+      grid-template: 414px 130px 155px 20px /320px 198px 153px 50px;
+    }
+
+
+
+    .item-redbox {
+      grid-area: 1/1/2/2;
+ color: blue;
+font-weight: bold;
+font-size: large;
+display: flex;
+justify-content: center;
+align-items: center; 
+      background-color:#E72F24;
+
+    }
+
+    .item-yellow {
+      background-color:  #F9D01E;
+      grid-area: 4/2/4/3;
+    }
+
+    .item-black {
+      background-color:#232629 ;
+      grid-area: 4/3/4/4;
+
+    }
+
+    .item-blue {
+      background-color:#004592;
+      grid-area: 2/4/3/5;
+      border-bottom: 10px solid black;
+    }
+    .item-white1{
+      background-color:  #F0F1EC;
+grid-area:1/2/2/5 ;
+    }
+    .item-white2{
+      background-color: #F0F1EC;
+grid-area: 2/1/4/2;
+    }
+    .item-white3{
+      background-color: #F0F1EC;
+grid-area: 2/2/4/4;
+    }
+    .item-white4{
+      background-color: #F0F1EC;
+grid-area: 4/1/5/2;
+    }
+    .item-white5{
+      background-color: #F0F1EC;
+grid-area: 3/4/5/5;
+    }
+
+</style>
+</head>
+<!-- Write your HTML here -->
+<body>
+  <div class="container">
+<div class="item-redbox">1.Ram</div>
+    <div class="item-yellow">2</div>
+    <div class="item-black">3</div>
+    <div class="item-blue">4</div>
+    <div class="item-white1">5</div>
+    <div class="item-white2">6</div>
+    <div class="item-white3">7</div>
+    <div class="item-white4">8</div>
+    <div class="item-white5">9</div>
+    
+ </div>
+  
+</body>
+
+</html>
